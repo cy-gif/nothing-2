@@ -1,0 +1,202 @@
+.wrapper {
+    font-family: "Arial", sans-serif;
+    font-size: 14pt;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.cardDiv {
+    background-color: #e0f7fa;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 570px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 10px;
+}
+
+.emoji {
+    font-size: 1.6rem;
+    margin-top: 0;
+}
+
+.cardDiv img {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 150px;
+}
+
+.discoverBtn {
+    padding: 10px 15px;
+    background-color: #00796b;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.imageContainer {
+    width: 50%;
+    padding: 3%;
+    margin: 0 auto;
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .cardDiv {
+        padding: 15px;
+        margin: 10px;
+    }
+    
+    .emoji {
+        font-size: 1.3rem;
+    }
+    
+    .discoverBtn {
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cardDiv {
+        padding: 12px;
+    }
+
+    .emoji {
+        font-size: 1rem;
+    }
+
+    .discoverBtn {
+        padding: 6px 10px;
+    }
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 65vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.heroContainer {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.hero h1 {
+    color: #ffffff;
+    font-size: 30pt;
+    font-weight: 600;
+    text-align: center;
+}
+
+.hero p {
+    font-family: "Arial", sans-serif;
+    font-size: 18pt;
+    font-weight: 300;
+    text-align: center;
+}
+
+.hero a {
+    font-family: "Arial", sans-serif;
+    font-size: 16pt;
+    text-align: center;
+    background-color: #004d40;
+    padding: 12px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #ffffff;
+    margin: 20px;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.cardWagon {
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px;
+    text-align: center;
+}
+
+.cardWagon p, .cardWagonBot p {
+    font-size: 13pt;
+    padding: 18px;
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+.cardWagon h3, .cardWagonBot h3 {
+    font-size: 17pt;
+    font-weight: 500;
+}
+
+.cardWagon img, .cardWagonBot img {
+    width: 160px;
+    height: 160px;
+    border-radius: 10%;
+}
+
+.cardWagonBot {
+    background-color: #ffffff;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 35px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px;
+}
+
+.cardWagonBot h3 {
+    font-size: 19pt;
+}
